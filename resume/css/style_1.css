@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.content p:first-of-type {
+    margin-top: 15px;
+}
+
+.content1 {
+    margin-top: 20px;
+}
+
+.content1 p:nth-of-type(2n-1) {
+    margin-top: 15px;
+}
