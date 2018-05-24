@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    height: 70px;
+    background: black;
+    color: white;
+}
+
+.header h2 {
+    float: left;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.header p {
+    float: right;
+    margin-right: 100px;
+}
+
+.photo {
+    height: 200px;
+    background: #80ff00;
+    position: relative;
+    overflow: hidden;
+}
+
+.photo ul {
+    position: absolute;
+    right: 150px;
+    bottom: 10px;
+}
+
+.photo li {
+    bottom: 20px;
+    margin: 0 10px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #8e8e8e;
+    text-align: center;
+    background: #dbdbdb;
+    list-style: none;
+}
+
+.photo li:hover {
+    padding-top: 10px;
+    background: white;
+}
+
+.nav {
+    height: 40px;
+    border-bottom: 1px solid #e8e8e8;
+    margin-top: 10px;
+    font-size: 0;
+    position: relative;
+}
+
+.nav ul {
+    margin-left: 150px;
+}
+
+.nav li {
+    display: inline-block;
+    border: 1px solid #b5b5b5;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 0px;
+}
+
+.nav li:nth-child(2) {
+    background: #8e8e8e;
+}
+
+.nav li:nth-child(3) {
+    background: #8e8e8e;
+}
+
+.nav li:first-child {}
+
+.zhebu {
+    height: 2px;
+    width: 79px;
+    background: white;
+    position: absolute;
+    top: 39px;
+    left: 151px;
+}
+
+.biao1 {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.biao2,
+.biao3,
+.biao4 {
+    width: 300px;
+    height: 150px;
+    border: 1px solid #858585;
+    text-align: center;
+    line-height: 150px;
+}
+
+.biao3 {
+    margin: 0 10px;
+}
+
+.biao5 {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.biao6,
+.biao7,
+.biao8,
+.biao9 {
+    width: 210px;
+    height: 150px;
+    border: 1px solid #858585;
+    text-align: center;
+    line-height: 150px;
+}
+
+.biao7,
+.biao8 {
+    margin: 0 10px;
+}
+
+.biao10 {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.biao11,
+.biao12,
+.biao13 {
+    width: 300px;
+    height: 150px;
+    border: 1px solid #858585;
+    text-align: center;
+    line-height: 150px;
+}
+
+.biao12 {
+    margin: 0 10px;
+}
+
+.footer {
+    height: 120px;
+    margin-top: 20px;
+    background: #858585;
+}
+
+.footer p {
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}

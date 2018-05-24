@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        .centainer {
+            display: flex;
+        }
+        
+        .center {
+            flex: 1;
+            min-height: 150px;
+            background: blue;
+        }
+        
+        .left {
+            flex: 0 0 200px;
+            min-height: 150px;
+            background: green;
+        }
+        
+        .right {
+            flex: 0 0 300px;
+            min-height: 150px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="centainer">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>

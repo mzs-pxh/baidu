@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /* flex两栏布局  */
+        
+        .layout {
+            display: flex;
+        }
+        
+        .layout_left {
+            flex: 30%;
+            height: 200px;
+            border: 1px solid #ff0000;
+        }
+        
+        .layout_right {
+            flex: 70%;
+            height: 200px;
+            border: 1px solid #6200ff;
+        }
+        /*position两栏布局 
+        .layout_left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30%;
+            height: 200px;
+            border: 1px solid #ff0000;
+            box-sizing: border-box;
+        }
+        
+        .layout_right {
+            position: absolute;
+            top: 0;
+            left: 30%;
+            width: 70%;
+            height: 200px;
+            border: 1px solid #0000ff;
+            box-sizing: border-box;
+        } */
+        /* float两栏布局 
+        
+        .layout_left {
+            float: left;
+            width: 30%;
+            height: 100px;
+            border: 1px solid #c0c0c0;
+            box-sizing: border-box;
+        }
+        
+        .layout_right {
+            float: left;
+            width: 70%;
+            height: 100px;
+            border: 1px solid #0000ff;
+            box-sizing: border-box;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="layout_left"></div>
+        <div class="layout_right"></div>
+    </div>
+</body>
+
+</html>
