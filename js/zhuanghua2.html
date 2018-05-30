@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+    <style>
+        #game3_result {
+            width: 400px;
+            letter-spacing: 5px;
+        }
+        
+        table {
+            width: 800px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        
+        table td {
+            width: 80px;
+            text-align: center;
+            height: 20px;
+            line-height: 20px;
+            border: 1px solid blue;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="dec-number" type="number" placeholder="输入一个十进制非负整数">
+    <input id="bin-bit" type="number" placeholder="输入转化后二进制数字位数">
+    <button id="trans-btn">转化为二进制</button>
+    <p id="result">运算结果</p>
+    <br>
+    <br>
+    <br>
+    <button id="game3">3的小游戏</button>
+    <p id="game3_result">运算结果</p>
+    <br>
+    <br>
+    <br>
+    <script>
+        var dec_number = document.getElementById("dec-number");
+        var bin_bit = document.getElementById("bin-bit");
+        var trans_btn = document.getElementById("trans-btn");
+        var result = document.getElementById("result");
+        var game3 = document.getElementById("game3");
+        var game3_result = document.getElementById("game3_result");
+        var d = [];
+
+        function dec2bin() {
+            var d = [];
+            var e = "";
+            var f = 0;
+            var g = "";
+            var number = Number(dec_number.value);
+            var bin = Number(bin_bit.value);
+            if (number < 0) {
+                alert("请输入正数");
+                result.innerHTML = "请输入正数";
+            } else {
+                for (var i = 0; 1; i++) {
+                    if (number / 2 >= 1) {
+                        d[i] = number % 2;
+                        number = parseInt(number / 2);
+                    } else {
+                        d[i] = 1;
+                        break;
+                    }
+                }
+                for (i = d.length; i > 0; i--) {
+                    e += d[i - 1];
+                }
+                if (bin - d.length > 0) {
+                    f = bin - d.length;
+                    for (i = 0; i < f; i++) {
+                        g += "0";
+                        result.innerHTML = g + e;
+                    }
+                } else {
+                    alert("请输入正确的位数");
+                    result.innerHTML = "请输入正确的位数";
+                }
+            }
+        }
+
+        function game() {
+            game3_result.innerHTML = "";
+            for (i = 1; i <= 100; i++) {
+                if (i % 3 == 0) {
+                    game3_result.innerHTML += "&nbsp; " + "PA";
+                } else {
+                    game3_result.innerHTML += "&nbsp; " + i;
+                }
+            }
+        }
+        trans_btn.onclick = function() {
+            dec2bin();
+        }
+        game3.onclick = function() {
+            game();
+        }
+        document.write("<table>");
+        document.write("<h2>" + "99乘法表" + "</h2>");
+        for (var x = 1; x < 10; x++) {
+
+            document.write("<tr>")
+            for (
+                var y = 1; y <= x; y++) {
+                document.write("<td>" + x + "*" + y + "=" + (x * y) + "</td>");
+            }
+            document.write("</tr>")
+        }
+        document.write("</table>");
+    </script>
+</body>
+
+</html>

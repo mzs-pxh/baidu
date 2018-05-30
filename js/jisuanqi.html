@@ -15,21 +15,36 @@
     <button id="divide-btn">除</button>
     <p id="result">运算结果</p>
     <script>
+        var a = document.getElementById("first-number")
+        var b = document.getElementById("second-number")
         document.getElementById("add-btn").onclick = function() {
             document.getElementById("result").innerHTML =
-                Number(document.getElementById("first-number").value) + Number(document.getElementById("second-number").value)
+                Number(a.value) + Number(b.value);
+            e()
         }
         document.getElementById("minus-btn").onclick = function() {
             document.getElementById("result").innerHTML =
-                Number(document.getElementById("first-number").value) - Number(document.getElementById("second-number").value)
+                Number(a.value) - Number(b.value);
+            e()
         }
         document.getElementById("times-btn").onclick = function() {
             document.getElementById("result").innerHTML =
-                Number(document.getElementById("first-number").value) * Number(document.getElementById("second-number").value)
+                Number(a.value) * Number(b.value);
+            e()
         }
         document.getElementById("divide-btn").onclick = function() {
             document.getElementById("result").innerHTML =
-                Number(document.getElementById("first-number").value) / Number(document.getElementById("second-number").value)
+                Number(a.value) / Number(b.value);
+            d();
+            e()
+        }
+
+
+        function d() {
+            if (Number(b.value) == 0) {
+                alert("请输入正确的数字");
+                document.getElementById("result").innerHTML = "Infinity";
+            }
         }
     </script>
 </body>
